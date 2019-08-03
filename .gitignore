@@ -2,3 +2,8 @@ BattleTank/Content/Materials/LandscapeMaterials/
 BattleTank/Content/StarterContent/Architecture/Floor_400x400.uasset
 BattleTank/Content/StarterContent/
 *.umap
+BattleTank/Content/Tank/01_-_Default.uasset
+BattleTank/Content/Tank/tank_fbx_Barrel.uasset
+BattleTank/Content/Tank/tank_fbx_Body.uasset
+BattleTank/Content/Tank/tank_fbx_Track.uasset
+BattleTank/Content/Tank/tank_fbx_Turret.uasset
