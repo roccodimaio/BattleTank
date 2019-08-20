@@ -1,7 +1,15 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
+#include "Components/StaticMeshComponent.h"
 #include "Tank.h"
+
+
+
+void ATank::SetBarrelReference(UStaticMeshComponent* BarrelToSet)
+{
+	TankAimingComponent->SetBarrelReference(BarrelToSet);
+}
 
 // Sets default values
 ATank::ATank()
@@ -11,6 +19,7 @@ ATank::ATank()
 
 	TankAimingComponent = CreateDefaultSubobject<UTankAimingComponent>(FName("Aim Component"));
 }
+
 
 // Called when the game starts or when spawned
 void ATank::BeginPlay()
@@ -37,3 +46,5 @@ void ATank::AimAt(FVector HitLocation)
 {
 	TankAimingComponent->AimAt(HitLocation);
 }
+
+
